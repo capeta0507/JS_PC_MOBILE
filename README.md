@@ -3,7 +3,7 @@
 
 前端工作經常需要判斷使用者採用甚麼設備上網 PC or 手機，藉以引導到不同版本的網頁去。
 
-[Github程式碼](https://github.com/capeta0507/JS_PC_MOBILE/settings)
+[Github程式碼](https://github.com/capeta0507/JS_PC_MOBILE)
 
 javascript 重要指令是 navigator.userAgent 取得設備名稱
 下面是相關的指令
