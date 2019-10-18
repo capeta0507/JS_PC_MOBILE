@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    $(document).ready(function(){
+        // 判斷是否為 PC 設備
+        if (IsPC()) {
+            console.log("Go to PC Page");
+            // alert('PC');
+            window.location.assign('/pc.html');
+        }else{
+            console.log("Go to Mobile Page...");
+            // alert('手機');
+            window.location.assign('/mobile.html')
+        }
+    })
+ 
+    function IsPC() 
+        { 
+            var userAgentInfo = navigator.userAgent; 
+            // Agents 字串陣列來判斷是否為手機裝置
+            var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"); 
+            var flag = true; 
+            for (var v = 0; v < Agents.length; v++) { 
+                let findIndex = userAgentInfo.indexOf(Agents[v]);
+                console.log(v,Agents[v],findIndex);
+                if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; } 
+            } 
+            return flag; 
+        } 
+    </script>
+</html>
