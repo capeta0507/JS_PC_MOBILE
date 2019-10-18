@@ -1,4 +1,4 @@
-# JavaScript 除錯 Console
+# JavaScript 判斷 PC/手機
 ###### tags: `JavaScript` `PC/手機`
 
 前端工作經常需要判斷使用者採用甚麼設備上網 PC or 手機，藉以引導到不同版本的網頁去。
